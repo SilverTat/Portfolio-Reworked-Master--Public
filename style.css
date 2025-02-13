@@ -255,15 +255,15 @@ p{
 .loggoContainer {
     display: flex;
     /* margin-top: 5%; */
-    justify-content: space-around;
+    justify-content: space-between;
 
     width: 100%;
-    height: 100px;
+    height: 100%;
     
 }
 
 .loggo {
-    width: 50%;
+    width: 75%;
     transition: all 300ms;
     cursor: pointer;
 }
