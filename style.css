@@ -150,6 +150,12 @@ p{
     font-weight: bold;
 
 }
+#highlightTxtConstruction {
+    color: #fff;
+    background-color: red;
+    font-weight: bold;
+
+}
 
 #btnWord {
     color: #000;

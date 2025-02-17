@@ -1,124 +1,90 @@
 <!DOCTYPE html>
-<html class="fullContainer">
+<html>
 
 <head>
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+    </style>
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
-</style>
+<body>
 
-
-<header class="header">
-    <a href="index.html" class="menuOptions"> <img class="menuIMG" src="assets\home.png">&nbsp; Home</a>
-    <a href="index.html#MyProjects" class="menuOptions"><img class="menuIMG" src="assets\project.png">&nbsp; My
-        Projects</a>
-    <a href="assets\Sebastian Persson - CV.pdf" class="menuOptions" target="
-    "> <img class="menuIMG" src="assets\CVIMG.png">&nbsp; CV</a>
-    <a href="aboutme.html" class="menuOptions"> <img class="menuIMG" src="assets\AboutMeIMG.png">&nbsp; About me</a>
-</header>
-
-<body class="container">
-    <!-- Detta är här och skall typ ha en bild på projektet datum, osv -->
-    <div class="slideShowIMGHome">
-        <img class="img2" src="assets\Homepage_elementv.3.png" alt="">
-
-        <div class="SlideShowIMGBILD">
-            <img class="PFPIMG" src="assets\HomeMePicTest2 (2).jpg">
-        </div>
-
-        <div class="SlideShowIMGTXT">
-            <h1 id="h1Index">Hi, Im Sebastian, a MsC student studying service design with a BsC in UX. I also have a
-                passion for learning and creating user centered
-                solutions!</h1>
-            <div>
-                <a class="readMoreBTN" href="aboutme.html">About me</a>
-            </div>
-
-
-        </div>
-
-
+    <!-- Menu navigation -->
+    <div class="header">
+        <a id="index" class="menuStatic" href="index.html">Home</a>
+        <a id="cases" class="menu" href="myProjects.html">Case Studys</a>
+        <a id="cv" class="menu" href="#">CV</a>
+        <a id="about_me" class="menu" href="#">About me</a>
     </div>
 
-    <div class="Projects1SkillsRole">
-        <!-- PUT PROJECT --1-- CONTENT HERE -->
-        <div class="Skills" id="">
-            <!-- <img src="./assets/test.png" style="width: 2"> -->
+    <hr class="hrStyle">
 
+    <!-- container for content. Needed to have padding -->
+    <div class="bodyContain">
 
-            <p>&#x2022; <b>My skills</b> &#x2022; </p>
-            <p>&#x2022; UX design </p>
-            <p>&#x2022; HTML & CSS </p>
-            <p>&#x2022; JS </p>
-            <p>&#x2022; React native </p>
-            <p>&#x2022; Data analysis </p>
-            <p>&#x2022; Swedish & English </p>
+        <div class="aboutMeTest">
+            <div style="width: 35%;">
 
-
-
-        </div>
-
-
-
-
-
-    </div>
-
-    <h1 class="designstudioTitel" id="MyProjects">My Projects</h1>
-
-    <div class="tableOFContent_Projects">
-        <div class="tableOFContent">
-            <a class="tableOFContent_projects" href="case1Page.html"><img class="IMG_hover" src="assets\BG-Logga.png">
-            </a>
-            <a class="tableOFContent_projects" href="case2Page.html"><img class="IMG_hover"
-                    src="assets\REgion_Halland_Logga.png"></a>
-            <a class="tableOFContent_projects" href="case3Page.html"><img class="IMG_hover"
-                    src="assets/LBVA&VIVABv.3.png"></a>
-
-        </div>
-    </div>
-
-    <h1 class="designstudioTitel" id="MyProjects">Projects summary</h1>
-
-    <a class="test_a" href="case1Page.html">
-        <div class="testprojectHome">
-            <div class="txttest">
-                <h2>Balance Golf</h2>
-                <p>The project brief provided by Balance golf, co developed by Esbjörn Ebbesson, described the problem
-                    area like the following: The website is not structured or adapted for the target group. It is
-                    neither designed in such a way that it explainscaptures
-                    our golfing concept as a whole. Initially the design team questioned this brief as the website as a
-                    whole seemed to be relatively well designed. By further examining the website with the project brief
-                    in mind the design team could
-                    uncover glaring issues in the informational architecture within the website. Therefore this became
-                    the focus of the project.
-                </p>
+                <h1 id="h1Modifier" style="margin-top: 50%;">HELLO THERE, MY NAME IS </h1>
+                <h2 id="h2Modifier">SEBASTIAN PERSSON</h2>
+                <p>Hi, Im Sebastian, a <span id="highlightTxt">MsC STUDENT</span> studying service design with a <span
+                        id="highlightTxt">BsC IN UX</span>. I also have a passion for
+                    learning and creating user centered
+                    solutions! Keep scrolling to see the projects i've previously worked with; or why not just use this
+                    convenient <a id="btnWord" href="myProjects.html">BUTTON</a>?</p>
             </div>
 
-            <div class="projectPictureHome_Aligner">
-                <img id="projectPictureHome_BG" src="assets\BG-Logga.png">
+            <div class="aboutMeImg">
+                <img class="imgMeTest" src="assets\HomeMePicTest2 (3).jpg">
             </div>
 
         </div>
-    </a>
 
-    <a class="test_a" href="case2Page.html">
-        <div class="testprojectHome">
-            <div class="projectPictureHome_Aligner">
-                <img id="projectPictureHome_Halland" src="assets\REgion_Halland_Logga.png">
+        <hr class="hrStyle" style="margin-top: 5%;">
+
+        <!-- Projects ive been apart of -->
+        <div class="myProjectsContainer" style="margin-bottom: 3.8%;">
+
+            <div class="myProjects">
+
+                <h2 style="margin-bottom: 0%; font-size: 2.5em;">CASE STUDY'S:</h2>
+                <p style="margin-top: 0%;"><i>press any case to see more</i></p>
+
             </div>
-            <div class="txttest">
-                <h2>Region Halland</h2>
-                <p>The briefs problems space encompassed Region halland and the bemanningsenheten. Today region hallands
+
+            <div class="divider">
+                <!-- Logos of projects -->
+        <div class="loggoContainer">
+            <a href="caseRegionH.html" class="a"><img class="loggo" src="assets\REgion_Halland_Logga.png"></a>
+                    <a href="caseLBVA&VIVAB.html" class="a"><img class="loggo" src="assets\LBVA&VIVABv.3.png"></a>
+                    <a href="caseBalanceG.html" class="a"><img class="loggo" src="assets\BG-Logga.png"></a>
+
+        </div>
+            </div>
+
+        </div>
+
+
+        
+
+        <hr class="hrStyle" >
+
+        <!-- Projects ive been apart of -->
+        <div class="myProjectsContainer">
+
+            <div class="myProjects">
+
+                <h2>LBVA & VIVAB</h2>
+                <p>
+                    The briefs problems space encompassed Region halland and the bemanningsenheten. Today region
+                    hallands
                     bemanningsenheten is in need of a more effective system for booking personnel who can drive and
                     administer proper care inside of ambulances.
                     This includes dividing work hours more efficiently and equally, seeing what competences different
@@ -126,48 +92,66 @@
                     and what competencies are needed inside
                     the ambulance.
                 </p>
+
             </div>
 
+            <div class="divider">
 
+            </div>
 
         </div>
-    </a>
 
-    <a class="test_a" href="case3Page.html">
-        <div class="testprojectHome">
+        <!-- Projects ive been apart of -->
+        <div class="myProjectsContainer">
 
-            <div class="txttest">
-                <h2>LBVA & VIVAB</h2>
-                <p>LBVA and VIVAB wanted to make actors such as, private individuals and companies conscious of
-                    freshwater as a finite resource and as a prerequisite for all life to function normally. This
-                    involved making actors stop wasting freshwater on,
-                    as an example cleaning their cars.
+            <div class="myProjects">
+
+                <h2>REGION HALLAND</h2>
+                <p>
+                    The briefs problems space encompassed Region halland and the bemanningsenheten. Today region
+                    hallands
+                    bemanningsenheten is in need of a more effective system for booking personnel who can drive and
+                    administer proper care inside of ambulances.
+                    This includes dividing work hours more efficiently and equally, seeing what competences different
+                    individuals have as well as having an efficient overview of work hours that are missing personnel
+                    and what competencies are needed inside
+                    the ambulance.
                 </p>
-            </div>
-            <div class="projectPictureHome_Aligner">
-                <img id="projectPictureHome" src="assets\LBVA&VIVABv.3.png">
+
             </div>
 
+            <div class="divider">
+
+            </div>
 
         </div>
-    </a>
 
+        <div class="myProjectsContainer" style="margin-bottom: 1.9%;">
 
+            <div class="myProjects">
 
+                <h2>BALANCE GOLF</h2>
+                <p>
+                    The briefs problems space encompassed Region halland and the bemanningsenheten. Today region
+                    hallands
+                    bemanningsenheten is in need of a more effective system for booking personnel who can drive and
+                    administer proper care inside of ambulances.
+                    This includes dividing work hours more efficiently and equally, seeing what competences different
+                    individuals have as well as having an efficient overview of work hours that are missing personnel
+                    and what competencies are needed inside
+                    the ambulance.
+                </p>
 
+            </div>
 
+            <div class="divider">
 
+            </div>
 
+        </div>
 
+    </div>
 
-
-
-
-
-
-
-
-    <div class="fot"></div>
 
 
 </body>
