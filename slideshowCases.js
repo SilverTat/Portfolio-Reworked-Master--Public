@@ -1,11 +1,19 @@
 // Object to store slide indices and enlargement states
 const slideshows = {
-    slideshow1: { index: 0, isEnlarged: false, totalSlides: 12 },
-    slideshow2: { index: 0, isEnlarged: false, totalSlides: 3 },
-    slideshow3: { index: 0, isEnlarged: false, totalSlides: 8 },
-    slideshow4: { index: 0, isEnlarged: false, totalSlides: 2 },
-    slideshow5: { index: 0, isEnlarged: false, totalSlides: 2 },
-    slideshow6: { index: 0, isEnlarged: false, totalSlides: 5 },
+    slideshow1RH: { index: 0, isEnlarged: false, totalSlides: 12 },
+    slideshow2RH: { index: 0, isEnlarged: false, totalSlides: 3 },
+    slideshow3RH: { index: 0, isEnlarged: false, totalSlides: 8 },
+    slideshow4RH: { index: 0, isEnlarged: false, totalSlides: 2 },
+    slideshow5RH: { index: 0, isEnlarged: false, totalSlides: 2 },
+    slideshow6RH: { index: 0, isEnlarged: false, totalSlides: 5 },
+
+    slideshow2LBVA: { index: 0, isEnlarged: false, totalSlides: 10 },
+    slideshow3LBVA: { index: 0, isEnlarged: false, totalSlides: 9 },
+    slideshow4LBVA: { index: 0, isEnlarged: false, totalSlides: 2 },
+    slideshow5LBVA: { index: 0, isEnlarged: false, totalSlides: 5 },
+    slideshow6LBVA: { index: 0, isEnlarged: false, totalSlides: 10 },
+
+    slideshow1BG: { index: 0, isEnlarged: false, totalSlides: 5 },
     
 };
 
@@ -46,7 +54,7 @@ function enlargeImage(slideshow) {
 }
 
 function updateSlideNumber(slideshow) {
-    let slideNumberElement = document.getElementById(`slideNumber${slideshow.slice(-1)}`);
+    let slideNumberElement = document.getElementById(`slideNumber${slideshow}`);
     if (slideNumberElement) {
         slideNumberElement.textContent = `${slideshows[slideshow].index + 1}/${slideshows[slideshow].totalSlides}`;
     }
